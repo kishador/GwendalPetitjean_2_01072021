@@ -1,0 +1,115 @@
+
+@font-face {
+    font-family:"ralewayRegular" ;
+    src: url("police/Raleway-Regular.ttf");
+}
+.flexCentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+a:active {
+    color:#DEEBFF;
+}
+.bordureZero {
+    border: none;
+}
+.backBleu {
+    background-color: #0065FC;
+}
+.backGris {
+    background-color: #F2F2F2;
+}
+.backBleuClair {
+    background-color: #DEEBFF;
+}
+.fontGris {
+    color: #F2F2F2;
+}
+.fontBleu {
+    color: #0065FC;
+}
+.fontBleuClair {
+    color: #DEEBFF;
+}
+.gras {
+    font-weight: bold;
+}
+body {   
+    font-family: "ralewayRegular", arial, serif;
+    font-size: 0.8em;
+}
+
+header img {
+    width: 77px;
+    height: 36px;
+    display: block;
+    margin-left: 35px;
+    margin-top: 25px;
+    } 
+nav {
+    position: absolute;
+    right: 50px;
+    top: 35px;
+}
+header nav ul {
+    display: inline;
+    list-style: none;
+    padding: 0px 35px;
+    }
+header nav ul li {
+    display: inline;
+    list-style: none;
+    padding: 0px 35px;
+}
+main {
+    margin-left: 35px ;
+    margin-top: 36px;
+}
+div h2 {
+    margin: 0 0 10px;
+    padding: 0;
+}
+div p {
+    margin: 0 0 10px;
+    padding: 0;
+}
+.bordureRecherche {
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 0.5px solid #F2F2F2;
+}
+.tailleIcone {
+    height: 45px;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+}
+.paddingRecherche {
+    padding-left: 20px;
+}
+.recherche {
+    height: 45px;
+    width: 230px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+.rechercher {
+    height: 45px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 0 10px 10px 0;
+}
+.filtres {
+    font-size: 15px;
+}
+.capsule {
+    padding: 15px 25px;
+}
