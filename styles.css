@@ -1,48 +1,70 @@
-
 @font-face {
-    font-family:"ralewayRegular" ;
+    font-family:"raleway-regular" ;
     src: url("police/Raleway-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
 }
-.flexCentre {
+
+body
+{
+	font-family: "raleway-regular", Arial, sans-serif;
+	margin: auto;
+	margin-right: 20px;
+}
+
+main
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: auto;
+}
+
+.flex-center {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-around {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 a {
     text-decoration: none;
 }
-a:active {
-    color:#DEEBFF;
-}
-.bordureZero {
+.marg-zero {
     border: none;
 }
-.backBleu {
+.back-blue {
     background-color: #0065FC;
 }
-.backGris {
+.back-gray {
     background-color: #F2F2F2;
-}
-.backBleuClair {
-    background-color: #DEEBFF;
 }
 .fontGris {
     color: #F2F2F2;
 }
-.fontBleu {
+.blue-font {
     color: #0065FC;
 }
 .fontBleuClair {
     color: #DEEBFF;
 }
-.gras {
+.bold-text {
     font-weight: bold;
 }
-body {   
-    font-family: "ralewayRegular", arial, serif;
-    font-size: 0.8em;
+.padding-left {
+	padding-left: 20px;
 }
-
+.marg-title {
+	margin: 20px;
+}
 header img {
     width: 77px;
     height: 36px;
@@ -51,7 +73,7 @@ header img {
     margin-top: 25px;
     } 
 nav {
-    position: absolute;
+    position: fixed;
     right: 50px;
     top: 35px;
 }
@@ -64,10 +86,6 @@ header nav ul li {
     display: inline;
     list-style: none;
     padding: 0px 35px;
-}
-main {
-    margin-left: 35px ;
-    margin-top: 36px;
 }
 div h2 {
     margin: 0 0 10px;
@@ -107,9 +125,269 @@ div p {
     font-size: 15px;
     border-radius: 0 10px 10px 0;
 }
-.filtres {
-    font-size: 15px;
+.margfiltre {
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
-.capsule {
-    padding: 15px 25px;
+.margfiltretitre {
+    margin-right: 20px;
+}
+.filtre {
+    display: flex;
+    align-items: center;
+}
+.filtretexteicons {
+    border: 2px solid #F2F2F2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.filtretexteicons:hover > .filter-text {
+    color: #0065FC;
+}
+.filtretexteicons:hover > .filter-icons {
+    color: white;
+    background-color: #0065FC;
+}
+.filter-text {
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+}
+.filtreicons {
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065FC ;
+    background-color: #DEEBFF;
+}
+.fa-info-circle {
+	margin-right: 10px;
+	background: #0065FC;
+	color: #FFFFFF;
+	border: 1px solid #F2F2F2;
+	border-radius: 10px;
+}
+#gray-areas {
+	display: flex;
+	margin-top: 10px;
+}
+
+#hebergement {
+	background: #F2F2F2;
+	border-radius: 20px;
+	width: 63%; 
+	height: 636px;  
+	margin: auto;
+}
+
+#mes-hebergements {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+article {
+	width: 30% ;   
+	border: 3px solid #ffffff; 
+	border-radius: 20px;
+	box-shadow: 0 4px 4px #c0c0c0;
+	line-height: 10px;
+	margin-top: 25px;	
+}
+
+article img {
+	margin-top: -15px;
+	width: 100%;
+	height: 110px;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+
+article h2 {
+	margin-left: 20px;
+	margin-bottom: 25px;
+}
+
+.caption {
+	margin: 10px;
+	line-height: 15px;	
+}
+
+.afficher-plus {
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.fas.fa-star.gray {
+	color: #dcdcdc;
+}
+
+aside {
+	background: #F2F2F2;
+	border-radius: 20px;
+	display: flex;
+    width: 33%; 
+	flex-direction: column;
+	margin: auto;
+	height: 636px; 
+	justify-content: space-around;
+}
+
+.bloc-populaire figure {
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #ffffff;
+	border-radius: 20px;
+	border-radius: 20px;
+	box-shadow: 0 4px 4px #c0c0c0;
+}
+
+.bloc-populaire img {
+	width: 35%;
+	border-radius: 20px 0 0 20px;
+	height: 150px;
+	margin-top: 1px;
+	object-fit: cover;
+}
+
+.bloc-populaire figcaption {
+	height: 135px;
+	width: 65%;
+	border-radius: 0 20px 20px 0;
+	margin-left: 10px;
+    line-height: 15px;
+}
+
+.bloc-populaire .ranking {
+	margin-top: 45px;
+}
+
+.fa-chart-line {
+	margin-right: 25px;
+}
+
+.ranking {
+	color: #0065FC;
+}
+
+#titre-populaire {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#activites figure {
+	margin: 0;
+	padding: 0;
+}
+#activites figcaption {
+	background: #FFFFFF; 
+	height: 40px;
+	border-radius: 0 0 20px 20px;
+	font-weight: bold;
+	margin-top: -4px;
+	padding: 15px 0 0 15px;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+}
+
+#activites-marseilles {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+#activites-marseilles h2 {
+	margin-left: 35px;
+}
+
+#activites {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top: 20px;
+	justify-content: space-around;	
+}
+
+.col-activites img {
+	width: 300px; 
+	height: 385px;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+
+.col-activites, .col2-activites, .col4-activites {
+	max-width: 300px;
+}
+
+#fort img {
+	width: 300px;
+	height: 180px; 
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+
+#iles img {
+	width: 300px;
+	height: 130px;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+
+figure#iles {
+	margin-top: 12px;
+}
+
+#notre-dame img {
+	width: 300px;
+	height: 135px;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+
+#parc img {
+	width: 300px;
+	height: 145px;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+
+figure#parc {
+	margin-top: 40px;
+}
+
+.col-activites, #fort, #iles, #notre_dame, #parc {
+	box-shadow: 0px 0px 20px #c0c0c0;
+	border-radius: 20px;
+}
+
+footer {
+	display: flex;
+	background: #F2F2F2;
+	color: black;
+	width: 100%;
+	margin-top: 50px;
+}
+
+footer ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	line-height: 25px;
+	margin-right: 100px;
+}
+
+footer li {
+	margin-right: 100px;
+}
+
+.col_footer {
+	width: 33%;
 }
