@@ -10,52 +10,59 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/fontawesome.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
  </head>
 <body>
-
-    <header>
-        <img src=images/Reservia@3x.png alt="Logo Reservia" class=logo/>
-        <nav>
-            <ul>
-                <li><a class="blue-font bold-text" href="#mes-hebergements">Hébergements</a></li>
-                <li><a class="blue-font bold-text" href="#activites">Activités</a></li>
-                <li><a class="blue-font bold-text" href="">S'inscrire</a></li>
-            </ul>
-        </nav>
-     </header>
+    <nav>
+        <div class="flex-between">
+            <div>
+                <img src=images/Reservia@3x.png alt="Logo Reservia" class="logo"/>
+            </div>
+            <div class="flex-around size-links">
+                <div class="size-link flex-center border-nav">
+                    <a class="color-link13 decoration-none" href="#user-hebergements">Hébergements</a>
+                </div>
+                <div class="size-link flex-center bold-text">
+                    <a class="color-link2 decoration-none" href="#activites">Activités</a>
+                </div>
+                <div class="size-link flex-center bold-text">
+                    <a class="color-link13 decoration-none" href="">S'inscrire</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <main>
-        <section class="padding-left">
+        <section>
             <div>
                 <h1 class="bold-text">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>    
-            <div class="bordureRecherche flex-center">
-                <div class="back-gray flex-center tailleIcone"><i class="fas fa-map-marker-alt"></i></div>
-                <div><input class="recherche flex-center marg-zero paddingRecherche" type="search" placeholder="Marseille, France"/></div>
-                <div class="rechercher flex-center back-blue">Rechercher</div>
+            <div class="border-search flex-center">
+                <div class="back-gray flex-center size-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div><input class="user-text flex-center marg-zero padding-search" type="search" placeholder="Marseille, France"/></div>
+                <div class="buton-search flex-center back-blue bold-text">Rechercher</div>
             </div>
-            <div class="filtre margfiltre">
-                <div class="margfiltretitre"><h3>Filtres</h3></div>
-                <div class="filtretexteicons flex-between">
-                    <i class="fas fa-money-bill-wave fa-lg icone filtreicons flex-center"></i>
-                    <div class="filter-text flex-center">Economique</div>
+            <div class="marg-filter display-filter">
+                <div class="bold-text marg-title-filter"><h3>Filtres</h3></div>
+                <div class="filter-text-icons flex-between">
+                    <div class="filter-icons flex-center"><i class="fas fa-money-bill-wave flex-center"></i></div>
+                    <div class="filter-text flex-center bold-text">Economique</div>
                 </div>
-                <div class="filtretexteicons flex-between">
-                    <i class="fas fa-child fa-lg filtreicons flex-center"></i>
-                    <div class="filter-text flex-center">Familial</div>
+                <div class="filter-text-icons flex-between">
+                    <div class="flex-center filter-icons"><i class="fas fa-child flex-center"></i></div>
+                    <div class="filter-text flex-center bold-text">Familial</div>
                 </div>
-                <div class="filtretexteicons flex-between">
-                    <i class="fas fa-heart fa-lg filtreicons flex-center"></i>
-                    <div class="filter-text flex-center">Romantique</div>
+                <div class="filter-text-icons flex-between">
+                    <div class="filter-icons flex-center"><i class="fas fa-heart flex-center"></i></div>
+                    <div class="filter-text flex-center bold-text">Romantique</div>
                 </div>
-                <div class="filtretexteicons flex-between">
-                    <i class="fas fa-dog fa-lg filtreicons"></i>
-                    <div class="filter-text flex-center">Animaux autorisés</div>
+                <div class="filter-text-icons flex-between">
+                    <div class="filter-icons flex-center"><i class="fas fa-dog flex-center"></i></div>
+                    <div class="filter-text flex-center bold-text">Animaux autorisés</div>
                 </div>
             </div>
-                <p class="padding-left"><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
                 <div id="gray-areas">		
                     <section id="hebergement">
                         <div class="marg-title"><h2>Hébergement à Marseille</h2></div>
-                        <div id="mes-hebergements">
+                        <div id="user-hebergements">
                             <article>
                                     <p>
                                         <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" />
@@ -74,7 +81,7 @@
                             </article>
     
                             <article>
-                                    <p><img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" />
+                                <p><img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" />
                                     </p>
                                     <div class="caption">
                                         <h3>Hôtel du port</h3>
@@ -87,7 +94,6 @@
                                             <i class="fas fa-star"></i>
                                         </div>
                                     </div>
-                                </a>
                             </article>
     
                             <article>
@@ -152,11 +158,11 @@
                                     </div>		
                             </article>
                         </div>
-                        <p class="afficher-plus">Afficher plus</p>			
+                        <p class="afficher-plus bold-text">Afficher plus</p>			
                     </section>	
     
                     <aside>
-                        <h2 id="titre-populaire" class="marg-title">Les plus populaires<i class="fas fa-chart-line"></i></h2>		
+                        <h2 id="titre-populaire">Les plus populaires<i class="fas fa-chart-line"></i></h2>		
     
                         <div class="bloc-populaire">
                                 <figure>
@@ -241,7 +247,7 @@
                         
     
                         <div class="col4-activites">
-                                <figure id="notre_dame">
+                                <figure id="notre-dame">
                                     <img src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                                     <figcaption>Notre-Dame-de-la-Garde</figcaption>
                                 </figure>
