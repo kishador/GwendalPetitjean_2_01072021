@@ -1,12 +1,18 @@
 @font-face {
-  font-family: "raleway-regular";
+  font-family: raleway-regular;
   src: url("police/Raleway-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: raleway-bold;
+  src: url("police/Raleway-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
 body {
-  font-family: "raleway-regular", Arial, sans-serif;
-  margin: 20px;
+  font-family: raleway-regular, raleway-bold, Arial, sans-serif;
+  margin: 0px;
 }
 main {
   display: flex;
@@ -29,20 +35,44 @@ main {
   justify-content: space-around;
   align-items: center;
 }
+a {
+  text-decoration: none;
+}
+h2 {
+  font-family: raleway-bold, "Arial Narrow Bold", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
 h3 {
-	font-size: 17px;
-	font-weight: bold;
+  font-family: raleway-bold, "Arial Narrow Bold", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+article h3,
+article p,
+figcaption h3,
+figcaption p,
+section p,
+figcaption {
+  color: black;
+}
+nav {
+  margin-left: 12px;
+}
+main {
+  margin-left: 12px;
 }
 .marg-zero {
   border: none;
 }
 .back-blue {
-  background-color: #0065fc;
+  background-color: rgb(0, 101, 252);
 }
 .back-gray {
-  background-color: #f2f2f2;
+  background-color: rgb(242, 242, 242);
 }
 .bold-text {
+  font-family: raleway-bold, "Arial Narrow Bold", sans-serif;
   font-weight: bold;
 }
 .padding-left {
@@ -51,47 +81,44 @@ h3 {
 .marg-title {
   margin: 20px;
 }
-.decoration-none {
-  text-decoration: none;
-}
 .logo {
   width: 120px;
   height: 50px;
 }
 .size-links {
-  width: 45%;
+  width: 30%;
 }
 .size-link {
-  width: 140px;
+  width: 130px;
   height: 99px;
 }
 .color-link13 {
-  color: #0065fc;
+  color: rgb(0, 101, 252);
 }
 .color-link2 {
   color: black;
 }
 .border-nav {
-	border-top: 2px solid #0065fc;
+  border-top: 2px solid rgb(0, 101, 252);
 }
 div h2 {
-  margin: 0 0 10px;
-  padding: 0;
+  margin: 0px 0px 10px;
+  padding: 0px;
 }
 div p {
-  margin: 0 0 10px;
-  padding: 0;
+  margin: 0px 0px 10px;
+  padding: 0px;
 }
 .border-search {
   width: 400px;
   margin-top: 20px;
   border-radius: 10px;
-  border: 0.5px solid #f2f2f2;
+  border: 0.5px solid rgb(242, 242, 242);
 }
 .size-icon {
   height: 45px;
   width: 50px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px 0px 0px 10px;
 }
 .padding-search {
   padding-left: 20px;
@@ -110,7 +137,7 @@ div p {
   cursor: pointer;
   font-weight: bold;
   font-size: 15px;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0px 10px 10px 0px;
 }
 .display-filter {
   display: flex;
@@ -123,102 +150,97 @@ div p {
 .marg-title-filter {
   margin-right: 20px;
 }
-.fa-dog, .fa-child, .fa-money-bill-wave, .fa-heart {
+.fa-dog,
+.fa-child,
+.fa-money-bill-wave,
+.fa-heart {
   font-size: 20px;
 }
 .filter-text-icons {
-  border: 2px solid #f2f2f2;
+  border: 2px solid rgb(242, 242, 242);
   height: 50px;
   border-radius: 30px;
   margin-right: 20px;
 }
 .filter-text-icons:hover > .filter-text {
-  color: #0065fc;
+  color: rgb(0, 101, 252);
+  cursor: pointer;
 }
 .filter-text-icons:hover > .filter-icons {
   color: white;
-  background-color: #0065fc;
+  background-color: rgb(0, 101, 252);
+  cursor: pointer;
 }
 .filter-text {
   height: 50px;
   padding-left: 10px;
   padding-right: 20px;
-  border-radius: 0 25px 25px 0;
+  border-radius: 0px 25px 25px 0px;
 }
 .filter-icons {
   border-radius: 25px;
   width: 52px;
   height: 52px;
-  color: #0065fc;
-  background-color: #deebff;
+  color: rgb(0, 101, 252);
+  background-color: rgb(222, 235, 255);
 }
-.fa-info-circle {
-	margin-right: 10px;
-	background: #0065FC;
-	color: #FFFFFF;
-	border: 1px solid #F2F2F2;
-	border-radius: 10px;
-  font-size: 18px;
+.fa-info {
+  font-size: 12px;
+  color: rgb(0, 101, 252);
+  border: 1.5px solid rgb(220, 220, 220);
+  border-radius: 25px;
+  padding: 5px 8px;
+  margin-right: 10px;
 }
 #gray-areas {
   display: flex;
   margin-top: 10px;
 }
-
 #hebergement {
-  background: #f2f2f2;
+  background: rgb(242, 242, 242);
   border-radius: 20px;
   width: 63%;
   height: 636px;
-  margin: auto;
 }
-
 #user-hebergements {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
-
 article {
   width: 30%;
-  border: 3px solid #ffffff;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 20px;
-  box-shadow: 0 4px 4px #c0c0c0;
+  box-shadow: rgb(192, 192, 192) 0px 4px 4px;
   line-height: 10px;
   margin-top: 8px;
   margin-bottom: 10px;
 }
-
 article img {
   margin-top: 0px;
   width: 100%;
   height: 110px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
-
 article h2 {
   margin-left: 20px;
   margin-bottom: 25px;
 }
-
 .caption {
   margin: 10px;
   line-height: 15px;
 }
-
 .afficher-plus {
   margin-top: 30px;
   margin-left: 20px;
 }
-
 .fas.fa-star.gray {
-  color: #dcdcdc;
+  color: rgb(220, 220, 220);
 }
-
 aside {
-  background: #f2f2f2;
+  background: rgb(242, 242, 242);
   border-radius: 20px;
   display: flex;
   width: 33%;
@@ -227,7 +249,6 @@ aside {
   height: 636px;
   justify-content: space-around;
 }
-
 .bloc-populaire figure {
   display: flex;
   flex-direction: row;
@@ -235,71 +256,61 @@ aside {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid #ffffff;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 20px;
-  border-radius: 20px;
-  box-shadow: 0 4px 4px #c0c0c0;
+  box-shadow: rgb(192, 192, 192) 0px 4px 4px;
 }
-
 .bloc-populaire img {
   width: 35%;
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px 0px 0px 20px;
   height: 150px;
   margin-top: 1px;
   object-fit: cover;
 }
-
 .bloc-populaire figcaption {
   height: 135px;
   width: 65%;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0px 20px 20px 0px;
   margin-left: 10px;
   line-height: 15px;
 }
-
 .bloc-populaire .ranking {
   margin-top: 45px;
 }
-
 .fa-chart-line {
   margin-right: 25px;
 }
-
 .ranking {
-  color: #0065fc;
+  color: rgb(0, 101, 252);
 }
-
+.marg-activity {
+  margin-left: 12px;
+}
 #titre-populaire {
   display: flex;
   justify-content: space-between;
   margin-top: 22px;
   margin-left: 22px;
 }
-
 #activites figure {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 #activites figcaption {
-  background: #ffffff;
+  background: rgb(255, 255, 255);
   height: 40px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0px 0px 20px 20px;
   font-weight: bold;
   margin-top: -4px;
-  padding: 15px 0 0 15px;
-  font-family: "Raleway", sans-serif;
+  padding: 15px 0px 0px 15px;
+  font-family: Raleway, sans-serif;
 }
-
 #activites-marseilles {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
 }
-
-#activites-marseilles h2 {
-  margin-left: 35px;
-}
-
 #activites {
   display: flex;
   flex-direction: row;
@@ -307,73 +318,62 @@ aside {
   margin-top: 20px;
   justify-content: space-around;
 }
-
 .col-activites img {
   width: 300px;
   height: 385px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
-
 .col-activites,
 .col2-activites,
 .col4-activites {
   max-width: 300px;
 }
-
 #fort img {
   width: 300px;
   height: 180px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
-
 #iles img {
   width: 300px;
   height: 130px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
-
 figure#iles {
   margin-top: 20px;
 }
-
 #notre-dame img {
   width: 300px;
   height: 135px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
-
 #parc img {
   width: 300px;
   height: 145px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
-
 figure#parc {
   margin-top: 48px;
 }
-
 .col-activites,
 #fort,
 #iles,
 #notre-dame,
 #parc {
-  box-shadow: 0px 0px 20px #c0c0c0;
+  box-shadow: rgb(192, 192, 192) 0px 0px 20px;
   border-radius: 20px;
 }
-
 footer {
   display: flex;
-  background: #f2f2f2;
+  background: rgb(242, 242, 242);
   color: black;
   width: 100%;
   margin-top: 50px;
 }
-
 footer ul {
   list-style-type: none;
   display: flex;
@@ -381,11 +381,9 @@ footer ul {
   line-height: 25px;
   margin-right: 100px;
 }
-
 footer li {
   margin-right: 100px;
 }
-
 .col_footer {
   width: 33%;
 }
