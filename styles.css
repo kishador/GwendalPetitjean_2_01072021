@@ -12,7 +12,10 @@
 }
 body {
   font-family: raleway-regular, raleway-bold, Arial, sans-serif;
-  margin: 0px;
+  margin-top: 0%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 main {
   display: flex;
@@ -21,6 +24,13 @@ main {
   margin-left: 12px;
   margin-right: 12px;
 }
+footer {
+    display: flex;
+    background: rgb(242, 242, 242);
+    color: black;
+    width: 100%;
+    margin-top: 50px;
+  }
 .flex-center {
   display: flex;
   justify-content: center;
@@ -59,7 +69,8 @@ figcaption {
 }
 nav {
   margin-left: 12px;
-  width: 100% auto;
+  margin-right: 12px;
+  width: 100%;
 }
 .marg-zero {
   border: none;
@@ -92,7 +103,8 @@ nav {
   height: 99px;
 }
 .size-link12 {
-  margin-left: 60%;
+  margin-left: 35%;
+  margin-top: 0px;
 }
 .color-link13 {
   color: rgb(0, 101, 252);
@@ -312,7 +324,7 @@ aside {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  width: 98%;
+  width: 100%;
 }
 #activites {
   display: flex;
@@ -330,7 +342,7 @@ aside {
 .col-activites,
 .col2-activites,
 .col4-activites {
-  max-width: 300px;
+  max-width: 320px;
 }
 #fort img {
   width: 100%;
@@ -370,30 +382,18 @@ figure#parc {
   box-shadow: rgb(192, 192, 192) 0px 0px 20px;
   border-radius: 20px;
 }
-footer {
-  display: flex;
-  background: rgb(242, 242, 242);
-  color: black;
-  width: 100%;
-  margin-top: 50px;
-  padding-left: 3%;
-}
 footer ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   line-height: 25px;
-  margin-left: 120px;
 }
-.col_footer {
-  width: 33%;
+.col-footer {
+  width: 32%;
 }
 /* RESPONSIVE */
-@media (max-width: 1000px) {
-  .size-link12 {
-    margin-left: 35%;
-  }
+@media (max-width: 1000px) { 
   #gray-areas {
     flex-direction: column-reverse;
   }
@@ -412,7 +412,14 @@ footer ul {
     display: flex;
     flex-direction: row;
   }
+  .bloc-populaire {
+    width: 33%;
+  }
   #hebergement {
     width: 100%;
   }
 }
+@media (max-width: px){}
+@media (max-width: px){}
+@media (max-width: px){}
+@media (max-width: px){}
