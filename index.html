@@ -19,22 +19,24 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
-    <nav>
-      <div class="size-links flex-between">
+    <nav class="size-nav">
+      <div class="flex-between size-links">
         <div>
-          <img src=images/Reservia@3x.png alt="Logo Reservia" class="logo"/>
+          <img src=images/Reservia@3x.png alt="Logo Reservia" class="logo" />
         </div>
-          <ul class="flex-center size-link12">
-             <li class="size-link flex-center border-nav">
-             <a class="color-link13" href="#user-hebergements">Hébergements</a>
-             </li>
-             <li class="size-link flex-center bold-text">
-             <a class="color-link2" href="#activites">Activités</a>
-             </li>
-             <li class="size-link flex-center bold-text">
-             <a class="color-link13" href="">S'inscrire</a>
-             </li>
+        <div class="size-link12 flex-center">
+          <div class="size-link-mobile size-link flex-center border-nav">
+            <a class="color-link12" href="#user-hebergements">Hébergements</a>
+          </div>
+          <div class="size-link-mobile size-link flex-center border-nav">
+            <a class="color-link12" href="#activites">Activités</a>
+          </div>
+        </div>
+        <div class="size-link flex-center border-nav">
+          <a class="color-link3 bold-text" href="">S'inscrire</a>
+        </div>
       </div>
     </nav>
     <main>
@@ -60,32 +62,38 @@
             Rechercher
           </div>
         </div>
-        <div class="marg-filter display-filter">
-          <div class="bold-text marg-title-filter"><h3>Filtres</h3></div>
-          <div class="filter-text-icons flex-between">
-            <div class="filter-icons flex-center">
-              <i class="fas fa-money-bill-wave flex-center"></i>
-            </div>
-            <div class="filter-text flex-center bold-text">Economique</div>
+        <div class="mobile-filter-wrap marg-filter display-filter">
+          <div class="bold-text marg-title-filter">
+            <h3>Filtres</h3>
           </div>
-          <div class="filter-text-icons flex-between">
-            <div class="flex-center filter-icons">
-              <i class="fas fa-child flex-center"></i>
+          <div class="flex-around">
+            <div class="filter-text-icons flex-between">
+              <div class="filter-icons flex-center">
+                <i class="fas fa-money-bill-wave flex-center"></i>
+              </div>
+              <div class="filter-text flex-center bold-text">Economique</div>
             </div>
-            <div class="filter-text flex-center bold-text">Familial</div>
+            <div class="filter-text-icons flex-between">
+              <div class="flex-center filter-icons">
+                <i class="fas fa-child flex-center"></i>
+              </div>
+              <div class="filter-text flex-center bold-text">Familial</div>
+            </div>
           </div>
-          <div class="filter-text-icons flex-between">
-            <div class="filter-icons flex-center">
-              <i class="fas fa-heart flex-center"></i>
+          <div class="flex-around">
+            <div class="filter-text-icons flex-between">
+              <div class="filter-icons flex-center">
+                <i class="fas fa-heart flex-center"></i>
+              </div>
+              <div class="filter-text flex-center bold-text">Romantique</div>
             </div>
-            <div class="filter-text flex-center bold-text">Romantique</div>
-          </div>
-          <div class="filter-text-icons flex-between">
-            <div class="filter-icons flex-center">
-              <i class="fas fa-dog flex-center"></i>
-            </div>
-            <div class="filter-text flex-center bold-text">
-              Animaux autorisés
+            <div class="filter-text-icons flex-between">
+              <div class="filter-icons flex-center">
+                <i class="fas fa-dog flex-center"></i>
+              </div>
+              <div class="filter-text flex-center bold-text">
+                Animaux autorisés
+              </div>
             </div>
           </div>
         </div>
@@ -96,11 +104,13 @@
       </section>
       <div id="gray-areas">
         <section id="hebergement">
-          <div class="marg-title"><h2>Hébergement à Marseille</h2></div>
+          <div class="marg-title">
+            <h2>Hébergement à Marseille</h2>
+          </div>
           <div id="user-hebergements">
             <article>
-              <a href=""
-                ><p>
+              <a href="">
+                <p>
                   <img
                     src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                     alt="Auberge La Cannebière"
@@ -230,7 +240,9 @@
               </a>
             </article>
           </div>
-          <a href=""><p class="afficher-plus bold-text">Afficher plus</p></a>
+          <a href="">
+            <p class="afficher-plus bold-text">Afficher plus</p>
+          </a>
         </section>
 
         <aside>
@@ -238,146 +250,152 @@
             Les plus populaires<i class="fas fa-chart-line"></i>
           </h2>
           <div class="bloc-populaire123">
-          <div class="bloc-populaire">
-            <a href="">
-              <figure>
-                <img
-                  src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                  alt="Hôtel Le soleil du matin"
-                />
-                <figcaption>
-                  <h3>Hôtel Le soleil du matin</h3>
-                  <p>Nuit à partir de 128€</p>
-                  <div class="ranking etoiles">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
+            <div class="bloc-populaire">
+              <a href="">
+                <figure>
+                  <img
+                    src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                    alt="Hôtel Le soleil du matin"
+                  />
+                  <figcaption>
+                    <h3>Hôtel Le soleil du matin</h3>
+                    <p>Nuit à partir de 128€</p>
+                    <div class="ranking etoiles">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
 
-          <div class="bloc-populaire">
-            <a href="">
-              <figure>
-                <img
-                  src="images/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                  alt="Au coeur de l'eau Chambres d'hôtes"
-                />
-                <figcaption>
-                  <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                  <p>Nuit à partir de 71€</p>
-                  <div class="ranking etoiles">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star gray"></i>
-                  </div>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
+            <div class="bloc-populaire">
+              <a href="">
+                <figure>
+                  <img
+                    src="images/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                    alt="Au coeur de l'eau Chambres d'hôtes"
+                  />
+                  <figcaption>
+                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                    <p>Nuit à partir de 71€</p>
+                    <div class="ranking etoiles">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star gray"></i>
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
 
-          <div class="bloc-populaire">
-            <a href="">
-              <figure>
-                <img
-                  src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                  alt="Hôtel Tout bleu et Blanc"
-                />
-                <figcaption>
-                  <h3>Hôtel Tout bleu et Blanc</h3>
-                  <p>Nuit à partir de 68€</p>
-                  <div class="ranking etoiles">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star gray"></i>
-                  </div>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
+            <div class="bloc-populaire">
+              <a href="">
+                <figure>
+                  <img
+                    src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                    alt="Hôtel Tout bleu et Blanc"
+                  />
+                  <figcaption>
+                    <h3>Hôtel Tout bleu et Blanc</h3>
+                    <p>Nuit à partir de 68€</p>
+                    <div class="ranking etoiles">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star gray"></i>
+                    </div>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
           </div>
         </aside>
       </div>
 
-    <section id="activites-marseille">
-      <div><h2 class="marg-activity">Activités à Marseille</h2></div>
-      <div id="activites">
+      <section id="activites-marseille">
         <div>
-          <a href="">
-            <figure class="col-activites">
-              <img
-                src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                alt="Vieux port à Marseille"
-              />
-              <figcaption>Vieux port</figcaption>
-            </figure>
-          </a>
+          <h2 class="marg-activity">Activités à Marseille</h2>
         </div>
+        <div id="activites">
+          <div class="col-activites">
+            <a href="">
+              <figure>
+                <img
+                  src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                  alt="Vieux port à Marseille"
+                />
+                <figcaption>Vieux port</figcaption>
+              </figure>
+            </a>
+          </div>
 
-        <div class="col2-activites">
-          <a href="">
-            <figure id="fort">
-              <img
-                src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                alt="Fort de Pomègues"
-              />
-              <figcaption>Fort de Pomègues</figcaption>
-            </figure>
-          </a>
-          <a href="">
-            <figure id="iles">
-              <img
-                src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                alt="Iles du Frioul"
-              />
-              <figcaption>îles du Frioul</figcaption>
-            </figure>
-          </a>
+          <div class="col2-activites">
+            <a href="">
+              <figure id="fort">
+                <img
+                  src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                  alt="Fort de Pomègues"
+                />
+                <figcaption>Fort de Pomègues</figcaption>
+              </figure>
+            </a>
+            <a href="">
+              <figure id="iles">
+                <img
+                  src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                  alt="Iles du Frioul"
+                />
+                <figcaption>îles du Frioul</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col-activites">
+            <a href="">
+              <figure>
+                <img
+                  src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                  alt="Parc National des Calanques, la mer et les rochers"
+                />
+                <figcaption>Parc National des Calanques</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col4-activites">
+            <a href="">
+              <figure id="notre-dame">
+                <img
+                  src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                  alt="Notre-Dame-de-la-Garde"
+                />
+                <figcaption>Notre-Dame-de-la-Garde</figcaption>
+              </figure>
+            </a>
+            <a href="">
+              <figure id="parc">
+                <img
+                  src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                  alt="Parc Longchamp"
+                />
+                <figcaption>Parc Longchamp</figcaption>
+              </figure>
+            </a>
+          </div>
         </div>
-        <a href="">
-          <figure class="col-activites">
-            <img
-              src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-              alt="Parc National des Calanques, la mer et les rochers"
-            />
-            <figcaption>Parc National des Calanques</figcaption>
-          </figure>
-        </a>
-        <div class="col4-activites">
-          <a href="">
-            <figure id="notre-dame">
-              <img
-                src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                alt="Notre-Dame-de-la-Garde"
-              />
-              <figcaption>Notre-Dame-de-la-Garde</figcaption>
-            </figure>
-          </a>
-          <a href="">
-            <figure id="parc">
-              <img
-                src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                alt="Parc Longchamp"
-              />
-              <figcaption>Parc Longchamp</figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-    </section>
-</main>
+      </section>
+    </main>
     <footer>
       <div class="col-footer">
         <ul>
-          <li><h3>A propos</h3></li>
+          <li>
+            <h3>A propos</h3>
+          </li>
           <li>Fonctionnement du site</li>
           <li>Conditions générales de vente</li>
           <li>Données et confidentialité</li>
@@ -386,7 +404,9 @@
 
       <div class="col-footer">
         <ul>
-          <li><h3>Nos hébergements</h3></li>
+          <li>
+            <h3>Nos hébergements</h3>
+          </li>
           <li>Charte de qualité</li>
           <li>Soumettre votre hôtel</li>
         </ul>
@@ -394,7 +414,9 @@
 
       <div class="col-footer">
         <ul>
-          <li><h3>Assistance</h3></li>
+          <li>
+            <h3>Assistance</h3>
+          </li>
           <li>Centre d'aide</li>
           <li>Nous contacter</li>
         </ul>
