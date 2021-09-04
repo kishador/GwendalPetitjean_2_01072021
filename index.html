@@ -34,13 +34,13 @@
             <a class="color-link12" href="#activites">Activités</a>
           </div>
         </div>
-        <div class="size-link flex-center border-nav">
+        <div class="size-link flex-center marg-nav">
           <a class="color-link3 bold-text" href="">S'inscrire</a>
         </div>
       </div>
     </nav>
     <main>
-      <section>
+      <section class="marg-section">
         <div>
           <h1 class="bold-text">
             Trouvez votre hébergement pour des vacances de rêve
@@ -51,22 +51,23 @@
           <div class="back-gray flex-center size-icon">
             <i class="fas fa-map-marker-alt"></i>
           </div>
-          <div>
+          <div class="user-text flex-center">
             <input
-              class="user-text flex-center marg-zero padding-search"
+              class="flex-center marg-zero padding-search"
               type="search"
               placeholder="Marseille, France"
             />
           </div>
-          <div class="buton-search flex-center back-blue bold-text">
-            Rechercher
-          </div>
+          <button type="submit" name="searching" class="button-search flex-center back-blue">
+            <p class="flex-center search-text bold-text">Rechercher</p>
+            <i class="fas fa-search search-icon flex-center"></i>
+          </button>
         </div>
-        <div class="mobile-filter-wrap marg-filter display-filter">
+        <div class="filter-wrap marg-filter display-filter">
           <div class="bold-text marg-title-filter">
             <h3>Filtres</h3>
           </div>
-          <div class="flex-around">
+          <div class="filter-wrap">
             <div class="filter-text-icons flex-between">
               <div class="filter-icons flex-center">
                 <i class="fas fa-money-bill-wave flex-center"></i>
@@ -79,8 +80,6 @@
               </div>
               <div class="filter-text flex-center bold-text">Familial</div>
             </div>
-          </div>
-          <div class="flex-around">
             <div class="filter-text-icons flex-between">
               <div class="filter-icons flex-center">
                 <i class="fas fa-heart flex-center"></i>
@@ -258,9 +257,11 @@
                     alt="Hôtel Le soleil du matin"
                   />
                   <figcaption>
-                    <h3>Hôtel Le soleil du matin</h3>
-                    <p>Nuit à partir de 128€</p>
-                    <div class="ranking etoiles">
+                    <div>
+                      <h3>Hôtel Le soleil du matin</h3>
+                      <p>Nuit à partir de 128€</p>
+                    </div>
+                    <div class="ranking">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -280,8 +281,10 @@
                     alt="Au coeur de l'eau Chambres d'hôtes"
                   />
                   <figcaption>
+                    <div>
                     <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                     <p>Nuit à partir de 71€</p>
+                    </div>
                     <div class="ranking etoiles">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -302,8 +305,10 @@
                     alt="Hôtel Tout bleu et Blanc"
                   />
                   <figcaption>
+                    <div>
                     <h3>Hôtel Tout bleu et Blanc</h3>
                     <p>Nuit à partir de 68€</p>
+                    </div>
                     <div class="ranking etoiles">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -319,14 +324,14 @@
         </aside>
       </div>
 
-      <section id="activites-marseille">
+      <section id="activites-marseille" class="marg-section">
         <div>
           <h2 class="marg-activity">Activités à Marseille</h2>
         </div>
         <div id="activites">
           <div class="col-activites">
             <a href="">
-              <figure>
+              <figure id="port">
                 <img
                   src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                   alt="Vieux port à Marseille"
@@ -358,7 +363,7 @@
           </div>
           <div class="col-activites">
             <a href="">
-              <figure>
+              <figure id="calanques">
                 <img
                   src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                   alt="Parc National des Calanques, la mer et les rochers"
@@ -391,35 +396,37 @@
       </section>
     </main>
     <footer>
-      <div class="col-footer">
-        <ul>
-          <li>
-            <h3>A propos</h3>
-          </li>
-          <li>Fonctionnement du site</li>
-          <li>Conditions générales de vente</li>
-          <li>Données et confidentialité</li>
-        </ul>
-      </div>
+      <div class="col-footers">
+        <div class="col-footer">
+          <ul>
+            <li>
+              <h3>A propos</h3>
+            </li>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et confidentialité</li>
+          </ul>
+        </div>
 
-      <div class="col-footer">
-        <ul>
-          <li>
-            <h3>Nos hébergements</h3>
-          </li>
-          <li>Charte de qualité</li>
-          <li>Soumettre votre hôtel</li>
-        </ul>
-      </div>
+        <div class="col-footer">
+          <ul>
+            <li>
+              <h3>Nos hébergements</h3>
+            </li>
+            <li>Charte de qualité</li>
+            <li>Soumettre votre hôtel</li>
+          </ul>
+        </div>
 
-      <div class="col-footer">
-        <ul>
-          <li>
-            <h3>Assistance</h3>
-          </li>
-          <li>Centre d'aide</li>
-          <li>Nous contacter</li>
-        </ul>
+        <div class="col-footer">
+          <ul>
+            <li>
+              <h3>Assistance</h3>
+            </li>
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
