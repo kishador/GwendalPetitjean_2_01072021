@@ -86,13 +86,12 @@ figcaption {
   font-family: raleway-bold, "Arial Narrow Bold", sans-serif;
   font-weight: bold;
 }
-.padding-left {
-  padding-left: 20px;
-}
 .marg-title {
   margin: 20px;
 }
-/*NAV*/
+
+/* NAV */
+
 .logo {
   width: 120px;
   height: 50px;
@@ -112,30 +111,32 @@ figcaption {
 .size-link12 {
   margin-left: 60%;
 }
-.color-link12 {
+.color-link2 {
   color: black;
 }
-.color-link3 {
+.color-link13 {
   color: rgb(0, 101, 252);
 }
-.border-nav {
+.border-nav-link1 {
+  border-top: 1px solid rgb(0, 101, 252);
+}
+.border-nav-link2 {
   border-top: 1px solid transparent;
 }
-.border-nav:link {
-  color: black;
-}
-.border-nav:hover {
+.border-nav-link2:hover {
   border-top: 1px solid rgb(0, 101, 252);
-  cursor: pointer;
 }
-.border-nav:hover > a {
+.border-nav-link2:hover > a {
   color: rgb(0, 101, 252);
 }
-div h2 {
+
+/* SECTION FILTRES RECHERCHE */
+
+div p {
   margin: 0px 0px 10px;
   padding: 0px;
 }
-div p {
+div h2 {
   margin: 0px 0px 10px;
   padding: 0px;
 }
@@ -256,6 +257,9 @@ button {
   padding: 5px 8px;
   margin-right: 10px;
 }
+
+/* SECTION HEBERGEMENT */
+
 #gray-areas {
   display: flex;
   margin-top: 10px;
@@ -267,7 +271,7 @@ button {
   height: auto;
   margin-left: 12px;
 }
-#user-hebergements {
+#hebergements {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -304,6 +308,8 @@ article h2 {
 .fas.fa-star.gray {
   color: rgb(220, 220, 220);
 }
+/* ASIDE POPULAIRE */
+
 aside {
   background: rgb(242, 242, 242);
   border-radius: 20px;
@@ -349,14 +355,17 @@ aside {
 .ranking {
   color: rgb(0, 101, 252);
 }
-.marg-activity {
-  margin-left: 12px;
-}
 #titre-populaire {
   display: flex;
   justify-content: space-between;
   margin-top: 22px;
   margin-left: 22px;
+}
+
+/* SECTION ACTIVITES */
+
+.marg-activity {
+  margin-left: 12px;
 }
 #activites figure {
   margin: 0px;
@@ -435,6 +444,9 @@ figure#parc {
   box-shadow: rgb(192, 192, 192) 0px 0px 20px;
   border-radius: 20px;
 }
+
+/* FOOTER */
+
 .col-footers {
   display: flex;
   justify-content: space-between;
@@ -596,14 +608,23 @@ footer ul {
     width: 100%;
     margin-left: 0;
   }
-  .size-link-mobile {
+  .size-link1-mobile {
     width: 50%;
     border-top: 0;
-    border-bottom: 5px solid rgb(192, 192, 192);
+    border-bottom: 3px solid rgb(0, 101, 252);
+    height: 55px;
+    margin-bottom: 12px;
   }
-  .size-link-mobile:hover {
+  .size-link2-mobile {
+    width: 50%;
     border-top: 0;
-    border-bottom: 5px solid rgb(0, 101, 252);
+    border-bottom: 3px solid rgb(192, 192, 192);
+    height: 55px;
+    margin-bottom: 12px;
+  }
+  .size-link2-mobile:hover {
+    border-top: 0;
+    border-bottom: 3px solid rgb(0, 101, 252);
   }
   .size-links {
     width: 100%;
@@ -622,11 +643,11 @@ footer ul {
     width: 100%;
     background: white;
   }
-  #user-hebergements {
+  #hebergements {
     display: flex;
     flex-direction: column;
   }
-  #user-hebergements article {
+  #hebergements article {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
