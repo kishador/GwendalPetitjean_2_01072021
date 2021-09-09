@@ -87,7 +87,9 @@ figcaption {
   font-weight: bold;
 }
 .marg-title {
-  margin: 20px;
+  margin-top: 28px;
+  margin-left: 18px;
+  margin-bottom: 35px;
 }
 
 /* NAV */
